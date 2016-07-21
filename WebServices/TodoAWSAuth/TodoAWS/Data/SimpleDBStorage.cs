@@ -19,15 +19,15 @@ namespace TodoAWSSimpleDB
 
 		public SimpleDBStorage ()
 		{
-			var credentials = new CognitoAWSCredentials (
-				                  Constants.CognitoIdentityPoolId, 
-				                  RegionEndpoint.USEast1);
-			var config = new AmazonSimpleDBConfig ();
-			config.RegionEndpoint = RegionEndpoint.USWest2;
-			client = new AmazonSimpleDBClient (credentials, config);
+			//var credentials = new CognitoAWSCredentials (
+			//	                  Constants.CognitoIdentityPoolId, 
+			//	                  RegionEndpoint.USEast1);
+			//var config = new AmazonSimpleDBConfig ();
+			//config.RegionEndpoint = RegionEndpoint.USWest2;
+			//client = new AmazonSimpleDBClient (credentials, config);
 
 			Items = new List<TodoItem> ();
-			SetupDomain ();
+			//SetupDomain ();
 		}
 
 		async void SetupDomain ()

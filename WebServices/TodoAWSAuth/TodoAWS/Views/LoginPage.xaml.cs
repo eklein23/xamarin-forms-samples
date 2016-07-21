@@ -10,10 +10,16 @@ namespace TodoAWSSimpleDB
 			InitializeComponent ();
 		}
 
-		void OnLoginClicked (object sender, EventArgs e)
+		void OnGoogleLoginClicked (object sender, EventArgs e)
 		{
 			// Use a custom renderer to display the authentication UI
-			Navigation.PushModalAsync (new AuthenticationPage ());			
+			Navigation.PushModalAsync (new AuthenticationPage("Google"));			
 		}
-	}
+
+        void OnTwitterLoginClicked(object sender, EventArgs e)
+        {
+            // Use a custom renderer to display the authentication UI
+            Navigation.PushModalAsync(new AuthenticationPage("Twitter"));
+        }
+    }
 }

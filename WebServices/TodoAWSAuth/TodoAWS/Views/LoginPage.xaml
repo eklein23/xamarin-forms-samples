@@ -5,7 +5,8 @@
 			 Title="Login">
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="Center">
-			<Button Text="Login" Clicked="OnLoginClicked" />
+			<Button Text="Google" Clicked="OnGoogleLoginClicked" />
+      <Button Text="Twitter" Clicked="OnTwitterLoginClicked" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

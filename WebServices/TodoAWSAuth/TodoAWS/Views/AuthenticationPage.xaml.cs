@@ -7,11 +7,14 @@ namespace TodoAWSSimpleDB
 {
 	public partial class AuthenticationPage : ContentPage
 	{
-		public AuthenticationPage ()
+        public string Provider { get; private set; }
+
+		public AuthenticationPage (string provider)
 		{
 			// A custom renderer is used to display the authentication UI
 			InitializeComponent ();
+
+            Provider = provider;
 		}
 	}
 }
-	
