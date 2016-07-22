@@ -105,8 +105,11 @@ namespace TodoAWSSimpleDB.Droid
                 }
                 else if (provider == "Twitter")
                 {
-                    e.Account.Username = e.Account.Properties["id"];
+                    e.Account.Username = e.Account.Properties["user_id"];
                     e.Account.Properties["provider"] = provider;
+                    App.User = new User();
+                    App.User.Id = e.Account.Username;
+                    App.User.Email = "foobar@test.com";
                     AccountStore.Create(Forms.Context).Save(e.Account, App.AppName);
                 }
             }
