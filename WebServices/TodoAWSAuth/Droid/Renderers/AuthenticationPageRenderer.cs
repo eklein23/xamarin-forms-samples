@@ -57,7 +57,7 @@ namespace TodoAWSSimpleDB.Droid
     requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"),
     authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"),
     accessTokenUrl: new Uri("https://api.twitter.com/oauth/access_token"),
-    callbackUrl: new Uri("http://twitter.com")
+    callbackUrl: new Uri("http://mobile.twitter.com")
 );
                     }
 
